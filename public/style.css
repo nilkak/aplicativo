@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #d25d19;
+    --secondary-color: #723410;
+    --accent-color: #550180;
+    --text-color: #333;
+    --light-gray: #ecf0f1;
+    --border-radius: 4px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #550180;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+  }
+  
+  .login-header h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .checkbox-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-input input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .checkbox-input input[type="checkbox"]:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .checkbox-input input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .checkbox-input label {
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    transition: border 0.3s;
+    margin-top: 5px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+  }
+  
+  .step {
+    display: none;
+  }
+  
+  .step.active {
+    display: block;
+  }
+  
+  .logo-image {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 250px;
+    height: auto;
+  }
+  

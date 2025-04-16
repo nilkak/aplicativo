@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICAÇÃO WHATSAPP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.jpeg" alt="Logo" class="logo-image">
+        <div class="login-header">
+            <h1>Bem vindo(a) a Snackin!<br><br>Para iniciar seu cadastro por favor digite seu celular para fazermos a verificação:</h1>
+        </div>
+        <div id="step1" class="step active">
+            <div class="checkbox-input">
+                <input type="checkbox" id="phoneCheckbox" checked disabled>
+                <label for="phoneCheckbox">Digite seu número com DDD</label>
+            </div>
+            <input type="text" id="phone" placeholder="(XX) XXXXX-XXXX">
+            <button class="login-button" onclick="enviarCodigo()">ENVIAR CÓDIGO</button>
+            <div id="msg1" class="message"></div>
+        </div>
+        <div id="step2" class="step">
+            <div class="checkbox-input">
+                <input type="checkbox" id="codeCheckbox" checked disabled>
+                <label for="codeCheckbox">Digite o código recebido</label>
+            </div>
+            <input type="text" id="codigoDigitado" placeholder="XXXXXX">
+            <button class="login-button" onclick="verificarCodigo()">VERIFICAR</button>
+            <div id="msg2" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

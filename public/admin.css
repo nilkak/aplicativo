@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #4a00e0;
+    --secondary-color: #8e2de2;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --bg-color: #f4f7fa;
+    --text-color: #333;
+  }
+  
+  body {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+  }
+  
+  .login-container {
+    background: white;
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="date"], 
+  input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  button.login-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  button.login-button:hover {
+    background: var(--secondary-color);
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  #qr-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  #log-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  #log-list li {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  

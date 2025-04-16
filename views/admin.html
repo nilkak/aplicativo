@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Administrador - WhatsApp</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Painel do Administrador</h1>
+
+    <div id="status" class="message"></div>
+
+    <h2 id="qr-title">QR Code de Conexão</h2>
+<div id="qr-container" style="text-align: center; margin-bottom: 20px;">
+  <img id="qr-image" style="max-width: 200px; display: block; margin: auto; border: 1px solid #ccc;" />
+  <p id="qr-msg">Aguardando conexão...</p>
+</div>
+
+
+    <h2>Filtrar Solicitações</h2>
+    <input type="text" id="filtroNumero" placeholder="Filtrar por número">
+    <input type="date" id="filtroData">
+    <button class="login-button" onclick="aplicarFiltro()">FILTRAR</button>
+
+    <h2>Últimos códigos enviados</h2>
+    <ul id="log-list"></ul>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
