@@ -59,7 +59,7 @@ function verificarCodigo() {
             msg2.classList.add("success");
             msg2.innerText = "Verificação bem-sucedida! Redirecionando...";
             setTimeout(() => {
-                window.location.href = "https://lionsse.com.br";
+                window.location.href = "https://web.condfy.com.br/lionssolucoes/triagem/8a8e989c4e6242c795a2a6839b9498a51e938abb0928464a8b0125cfa7f753ee";
             }, 2000);
         } else {
             msg2.classList.add("error");
